@@ -1,0 +1,11 @@
+lkw_id,driver,status,motor_temp_c,brake_fluid_pct,oil_pressure_bar,tire_fl_bar,tire_fr_bar,rul_hours,km_total,load_pct
+LKW-01,M. Weber,KRITISCH,98,12,2.1,7.8,8.1,48,287400,78
+LKW-02,J. Bauer,WARNUNG,91,28,3.2,8.4,8.3,320,198650,65
+LKW-03,S. Klein,OK,76,84,4.1,8.6,8.5,1850,142300,45
+LKW-04,T. Holm,OK,79,91,4.0,8.5,8.6,2100,98120,52
+LKW-05,A. Graf,OK,81,77,3.9,8.4,8.4,1620,215870,71
+LKW-06,P. Roth,OK,78,82,4.0,8.5,8.5,1980,156440,38
+LKW-07,K. Lang,WARNUNG,89,38,3.5,8.2,8.3,480,234910,82
+LKW-08,F. Wolf,OK,77,88,4.1,8.6,8.5,2240,112580,41
+LKW-09,R. Vogel,OK,80,73,3.8,8.4,8.5,1480,178220,58
+LKW-10,H. Stein,OK,75,86,4.0,8.5,8.6,2050,134750,49

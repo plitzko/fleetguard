@@ -1,0 +1,12 @@
+timestamp,severity,lkw_id,message,source,savings_eur
+2026-05-05 11:30,KRITISCH,LKW-01,Bremse 12 % – sofortige Wartung,XGBoost-Klassifikation,600
+2026-05-05 00:00,WARNUNG,LKW-01,Bremse 30 % – Wartung einplanen,XGBoost-Klassifikation,600
+2026-05-05 07:55,WARNUNG,LKW-02,Motortemp. 91 °C – prüfen,XGBoost-Klassifikation,600
+2026-05-04 19:30,INFO,LKW-05,Anomalie erkannt (ISO-Forest),Isolation Forest,600
+2026-05-04 14:30,WARNUNG,LKW-02,Bremse 28 % – Wartung einplanen,XGBoost-Klassifikation,600
+2026-05-04 09:00,INFO,LKW-03,Anomalie erkannt (ISO-Forest),Isolation Forest,600
+2026-05-03 16:20,INFO,LKW-07,Öldruck leicht erhöht,XGBoost-Klassifikation,600
+2026-05-03 11:15,WARNUNG,LKW-07,Bremse 42 % – Wartung einplanen,XGBoost-Klassifikation,600
+2026-05-02 22:08,INFO,LKW-09,Reifendruck-Schwankung erkannt,Isolation Forest,600
+2026-05-03 16:00,INFO,LKW-01,Anomalie erkannt (ISO-Forest),Isolation Forest,600
+2026-05-01 09:30,INFO,LKW-05,Öltemperatur grenzwertig,XGBoost-Klassifikation,600

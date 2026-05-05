@@ -1,0 +1,8 @@
+lkw_id,timestamp,severity,message
+LKW-01,2026-05-05 11:30,KRITISCH,Bremse unter 15 % – Sofortmaßnahme
+LKW-01,2026-05-05 00:00,WARNUNG,Bremse unter 30 % – Wartung einplanen
+LKW-01,2026-05-03 16:00,INFO,Anomalie erkannt (Isolation Forest)
+LKW-02,2026-05-05 07:55,WARNUNG,Motortemp. 91 °C – prüfen
+LKW-02,2026-05-04 14:30,WARNUNG,Bremse 28 % – Wartung einplanen
+LKW-07,2026-05-03 16:20,INFO,Öldruck leicht erhöht
+LKW-07,2026-05-03 11:15,WARNUNG,Bremse 42 % – Wartung einplanen
