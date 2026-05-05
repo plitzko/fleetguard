@@ -39,10 +39,11 @@ App läuft dann auf `http://localhost:8501`.
 
 ## Deploy auf Streamlit Community Cloud (kostenlos, online)
 
-1. Repo auf GitHub pushen (public oder privat)
-2. Auf [share.streamlit.io](https://share.streamlit.io) einloggen mit GitHub
-3. "New app" → Repo wählen → `app.py` als Main file → Deploy
-4. Nach ~2 Minuten ist eine `https://xxx.streamlit.app` URL verfügbar
+1. `runtime.txt` im Repo lassen, damit Streamlit Cloud Python 3.12 nutzt
+2. Repo auf GitHub pushen (public oder privat)
+3. Auf [share.streamlit.io](https://share.streamlit.io) einloggen mit GitHub
+4. "New app" → Repo wählen → `app.py` als Main file → Deploy
+5. Nach ~2 Minuten ist eine `https://xxx.streamlit.app` URL verfügbar
 
 Diesen Link in die Slide-Deck-Demo einbinden. Lokal als Backup laufen lassen, falls die Cloud-Demo zickt.
 
