@@ -1,5 +1,5 @@
 """
-FleetGuard - Predictive Maintenance Dashboard (MVP Click-Demo)
+PREMA - Predictive Maintenance Dashboard (MVP Click-Demo)
 Hochschule München | Big Data SS2026 | Team 1 (Predictive)
 
 Run locally:
@@ -18,7 +18,7 @@ from datetime import datetime
 # Page config
 # ============================================================================
 st.set_page_config(
-    page_title="FleetGuard – Predictive Maintenance",
+    page_title="PREMA – Predictive Maintenance",
     page_icon="🚛",
     layout="wide",
     initial_sidebar_state="collapsed",
@@ -349,7 +349,7 @@ def severity_color(severity):
 # ============================================================================
 st.markdown("""
 <div class="header-bar">
-    <div class="header-brand">FLEET<span class="header-brand-accent">GUARD</span> · Predictive Maintenance</div>
+    <div class="header-brand">PRE<span class="header-brand-accent">MA</span> · Predictive Maintenance</div>
     <div class="header-user">Thomas Müller · Spedition Müller GmbH</div>
 </div>
 """, unsafe_allow_html=True)
@@ -725,6 +725,6 @@ st.markdown("""
 <div style='text-align: center; padding: 2rem 0 1rem 0; color: #B0B0B5;
            font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 0.7rem;
            letter-spacing: 0.1em; border-top: 1px solid #F0F0F2; margin-top: 3rem;'>
-    FLEETGUARD MVP · HM BIG DATA SS2026 · TEAM 1 · DATEN SIMULIERT · KEIN PRODUKTIVBETRIEB
+    PREMA MVP · HM BIG DATA SS2026 · TEAM 1 · DATEN SIMULIERT · KEIN PRODUKTIVBETRIEB
 </div>
 """, unsafe_allow_html=True)

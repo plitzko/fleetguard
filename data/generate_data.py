@@ -1,11 +1,14 @@
 """
-Generates static fake data for the FleetGuard demo.
+Generates static fake data for the PREMA demo.
 Creates fleet.csv (current state) and timeseries.csv (last 72h history).
 Run once - data is checked into the repo so the demo is reproducible.
 """
 import numpy as np
 import pandas as pd
 from datetime import datetime, timedelta
+from pathlib import Path
+
+DATA_DIR = Path(__file__).parent
 
 np.random.seed(42)
 
@@ -35,7 +38,7 @@ cols = ["lkw_id", "driver", "status", "motor_temp_c", "brake_fluid_pct",
         "km_total", "load_pct"]
 
 fleet_df = pd.DataFrame(fleet_state, columns=cols)
-fleet_df.to_csv("/home/claude/fleetguard/data/fleet.csv", index=False)
+fleet_df.to_csv(DATA_DIR / "fleet.csv", index=False)
 print(f"fleet.csv: {len(fleet_df)} trucks")
 
 # Generate 72h timeseries for each truck (1 measurement per hour)
@@ -81,7 +84,7 @@ for _, truck in fleet_df.iterrows():
         })
 
 ts_df = pd.DataFrame(timeseries)
-ts_df.to_csv("/home/claude/fleetguard/data/timeseries.csv", index=False)
+ts_df.to_csv(DATA_DIR / "timeseries.csv", index=False)
 print(f"timeseries.csv: {len(ts_df)} datapoints ({len(fleet_df)} trucks x {hours}h)")
 
 # Generate alert feed
@@ -99,7 +102,7 @@ alerts = [
 ]
 
 alerts_df = pd.DataFrame(alerts, columns=["timestamp", "severity", "lkw_id", "message", "source", "savings_eur"])
-alerts_df.to_csv("/home/claude/fleetguard/data/alerts.csv", index=False)
+alerts_df.to_csv(DATA_DIR / "alerts.csv", index=False)
 print(f"alerts.csv: {len(alerts_df)} alerts")
 
 # Per-truck alert history (for detail view)
@@ -113,5 +116,5 @@ truck_alerts = [
     ("LKW-07", "2026-05-03 11:15", "WARNUNG", "Bremse 42 % – Wartung einplanen"),
 ]
 ta_df = pd.DataFrame(truck_alerts, columns=["lkw_id", "timestamp", "severity", "message"])
-ta_df.to_csv("/home/claude/fleetguard/data/truck_alerts.csv", index=False)
+ta_df.to_csv(DATA_DIR / "truck_alerts.csv", index=False)
 print(f"truck_alerts.csv: {len(ta_df)} truck-specific alerts")
